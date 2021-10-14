@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let a = prompt('số tiền bán (triệu)')
+    let b = prompt('số tiền gốc (triệu)')
+    let c = prompt('số sản phẩm bán ra')
+    if (c < 50){
+        hoahong = (a - b) * 0.05
+        alert('tiền hoa hồng là ' + hoahong + ' triệu')
+    }else {
+        if (c < 100){
+            hoahong = (a - b) * 0.1
+            alert('tiền hoa hồng là ' + hoahong + ' triệu')
+        }else {
+            if (c < 200){
+                hoahong = (a - b) * 0.15
+                alert('tiền hoa hồng là ' + hoahong + ' triệu')
+            }else {
+                hoahong = (a -b) * 0.2
+                alert('tiền hoa hồng là ' + hoahong + ' triệu')
+            }
+        }
+    }
+</script>
+</body>
+</html>

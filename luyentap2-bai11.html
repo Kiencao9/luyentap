@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 11</title>
+</head>
+<body>
+<script>
+    let thunhap = prompt('Tiền thu nhập 1 tháng (triệu)')
+    if (thunhap <= 5){
+        money = 0.05 * thunhap
+        alert('số tiền thuế là: ' + money + ' triệu đồng')
+    }else {
+        if (thunhap <= 10){
+            money = 0.25 + 0.1 * thunhap
+            alert('số tiền thuế là: ' + money + ' triệu đồng')
+        }else {
+            if (thunhap <= 18){
+                money = 0.75 + 0.15 * thunhap
+                alert('số tiền thuế là: ' + money + ' triệu đồng')
+            }else {
+                if (thunhap <= 32){
+                    money = 1.95 + 0.2 * thunhap
+                    alert('số tiền thuế là: ' + money + ' triệu đồng')
+                }else {
+                    if (thunhap <= 52){
+                        money = 4.75 + 0.25 * thunhap
+                        alert('số tiền thuế là: ' + money + ' triệu đồng')
+                    }else {}
+                    if (thunhap <= 80){
+                        money = 9.75 + 0.3 * thunhap
+                        alert('số tiền thuế là: ' + money + ' triệu đồng')
+                    }else {
+                        money = 18.15 + 0.35 * thunhap
+                        alert('số tiền thuế là: ' + money + ' triệu đồng')
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
